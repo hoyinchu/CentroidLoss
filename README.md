@@ -1,10 +1,19 @@
-# Centroid Loss
+# A Loss Function to Incorporate Structural Information Contained In the Output Space
 
 This is a project repository for the class DS 4420 Machine Learning and Data Mining 2
 
+Project Paper title: A Loss Function to Incorporate Structural Information Contained In the Output Space
 Project Paper Link: <insert later>
 
-How can we improve multi-label classification when the output space is structured like an ontology? We introduce a framework which allows for the incorporation ofclass structures contained in an ontology by assigning a centroid and radius to each class, and creating a learning objective that takes these constraints into account. We empirically show the framework is effective by restricting the learned output spaceto be 2-dimensional and visualizing the embedding produced by models using this framework. Finally, we also evaluated the impact different ontology embeddings would have on the accuracy of the models using this framework.
+How can we teach our models to project onto a pre-defined output space? In
+this paper we introduce centroid loss which allows models to incorporate output
+space information in the forms of balls and radii. We demonstrate a use case
+of this loss function by assigning a centroid and a radius to each node in an
+ontology, projecting the ontology onto 2D space, then trained two models using
+the centroid loss. We empirically show the loss function is effective by visualizing
+the embedding produced by the models using this loss function. Finally, we
+also evaluate the impact different output spaces would have on the accuracy of
+the models using this loss.
 
 ## How to reproduce the result
 
